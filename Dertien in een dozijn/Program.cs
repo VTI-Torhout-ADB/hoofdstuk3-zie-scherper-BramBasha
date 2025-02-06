@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            const int doosGrootte = 8;
+            int aantalEieren = 124;
+            int volleDozen = aantalEieren / doosGrootte; 
+            int restEieren = aantalEieren % doosGrootte; 
+            Console.WriteLine($"{aantalEieren} eieren passen in {volleDozen} dozen van doosgrootte: {doosGrootte}. Daarbij zal je nog {restEieren} eieren over hebben.");
         }
     }
 }
